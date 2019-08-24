@@ -1,6 +1,6 @@
 print("Bem vindo ao conversor de Reais para Dólar")
 d=float(input("Por favor informe quanto está a cotação do Dólar-> "))
 r=float(input("Quantos Reais você deseja converter em Dólar?-> "))
-conv=int(r*d)
+conv=float(r/d)
 print("Com a conversão desses Reais você terá", conv, "Dólares")
 print("Obrigado por usar este aplicativo :)")
