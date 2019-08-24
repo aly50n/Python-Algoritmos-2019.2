@@ -7,9 +7,8 @@ cts= (cs-1.5)+0.2
 lts= ls+0.5
 ctc= cc+0.2
 ltc= lc+0.5
-ac= ctc*ltc
-cpc= cts//ac
-cpl= lts//ac
+cpc= cts//ctc
+cpl= lts//ltc
 total= cpc*cpl
 print("Na sua sala de aula cabem", total, "Carteiras.")
 
