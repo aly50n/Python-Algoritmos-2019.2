@@ -10,4 +10,13 @@ for n in range (10):
         par = par + 1
     else:
         impar = impar + 1
-print("Tivemos",par, "Números pares e", impar, "Números impares.")
+if par == 1:
+    print("Tivemos",par, "Número par e", impar, "Números impares.")
+elif impar == 1:
+    print("Tivemos",par, "Números pares e", impar, "Número impar.")
+elif par == 0:
+    print("Não tivemos números pares mas tivemos", impar, "Números impares.")
+elif impar == 0:
+    print("Tivemos",par, "Números pares mas não tivemos números impares.")
+else:
+    print("Tivemos",par, "Números pares e", impar, "Números impares.")
