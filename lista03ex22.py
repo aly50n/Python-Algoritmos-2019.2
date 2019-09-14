@@ -19,7 +19,7 @@ for c in range(1,6):
         cont = cont + 1
 media5cidades = somaveic / c
 media2000 = soma2000 / cont
-print("O menor indice de acidentes de transito foi",menor, "acidente(s) na cidade de", cidmenor)
-print("O maior indice de acidentes de transito foi",maior, "acidente(s) na cidade de", cidmaior)
-print("Media de veiculos nas cincos cidades", media5cidades)
-print("Media de acidentes de transitos nas cidades com menos de 2000 é", media2000) 
+print("O menor indice de acidentes de transito foi",menor, "acidente(s) na cidade de:", cidmenor)
+print("O maior indice de acidentes de transito foi",maior, "acidente(s) na cidade de:", cidmaior)
+print("Media de veiculos nas cincos cidades é de:", media5cidades)
+print("Media de acidentes de trânsito nas cidades com menos de 2000 carros de passeio é de:", media2000) 
