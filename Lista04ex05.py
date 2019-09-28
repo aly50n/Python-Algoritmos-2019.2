@@ -1,5 +1,8 @@
 ch = input("Caractere: ")
-pr= int(input("Proporção: "))
+pr= int(input("Proporção(Deve ser maior ou igual a 6): "))
+while pr < 6:
+    print("Erro! Preste atenção na proporção!")
+    pr= int(input("Proporção(Deve ser maior ou igual a 6): "))
 a1= a2 = pr - 2
 
 for linha in range(pr//2):
