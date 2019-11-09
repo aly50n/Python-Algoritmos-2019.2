@@ -21,4 +21,4 @@ for i in range(ordem):
         print(matriz[i][j], end= " ")
     print()
 
-print("Soma dos elementos acima da diagonal principal:", soma)
+print("A soma dos elementos acima da diagonal principal é =", soma)
