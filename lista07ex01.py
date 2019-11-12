@@ -20,13 +20,11 @@ def separar_impar(tamanho,lista):
     return impar
 
 tamanho = int(input("Digite o tamanho do vetor: "))
-vetor = [0] * tamanho
 
-for i in range(tamanho):
-    vetor[i] = int(input("Digite um número inteiro: "))
-
+vetor = criar_lista(tamanho)
 par = separar_par(tamanho,vetor)
 impar = separar_impar(tamanho,vetor)
+
 print("="*50)
 print("Vetor:", vetor)
 print("="*50)
