@@ -1,12 +1,13 @@
-def ler_matriz(ordem):
+def criar_matriz(ordem):
     matriz = []
     for i in range(ordem):
         matriz.append([0]*ordem)
-    print("Digite os valores da Matriz:")
+    return matriz
+
+def ler_matriz(ordem,matriz):
     for i in range(ordem):
         for j in range(ordem):
             matriz[i][j] = int(input("Matriz Linha[" + str(i+1) + "], Coluna[" + str(j+1) + "]: "))
-    return matriz
 
 def trocar_valores_matrizes(matriz1,matriz2,ordem):
     aux2 = "s"
@@ -28,10 +29,12 @@ def printar_matriz(matriz,ordem):
 ordem = int(input("Digite a ordem das suas matrizes: "))
 
 print("1ª Matriz")
-matriz1 = ler_matriz(ordem)
+matriz1 = criar_matriz(ordem)
+ler_matriz(ordem,matriz1)
 
 print("2ª Matriz")
-matriz2 = ler_matriz(ordem)
+matriz2 = criar_matriz(ordem)
+ler_matriz(ordem,matriz2)
 
 print("=="*50)
 
