@@ -1,22 +1,22 @@
-def ler_vetor(tamanho):
-    vetor = [""] *tamanho
+def ler_vetor(tamanho,vetor):
     for i in range(tamanho):
         vetor[i] = int(input("Digite um número inteiro: "))
-    return vetor
 
 def concatenar_vetores(vetor1,vetor2,tamanho):
-    vetor = []
+    vetor_resultante = []
     for i in range(tamanho):
-        vetor.append(vetor1[i]) 
+        vetor_resultante.append(vetor1[i]) 
     for i in range(tamanho):
-        vetor.append(vetor2[i]) 
-    return vetor
+        vetor_resultante.append(vetor2[i]) 
+    return vetor_resultante
 
 tamanho = int(input("Digite o tamanho dos seus vetores: "))
 print("Primeiro Vetor: ")
-vetor1 = ler_vetor(tamanho)
+vetor1 = [0] *tamanho
+ler_vetor(tamanho,vetor1)
 print("Segundo Vetor: ")
-vetor2 = ler_vetor(tamanho)
+vetor2 = [0] *tamanho
+ler_vetor(tamanho,vetor2)
 
 print("="*50)
 
