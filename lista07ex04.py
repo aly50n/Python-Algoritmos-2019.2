@@ -4,10 +4,8 @@ def verificar_ordem(tamanho,vetor):
         if vetor[i] >= aux:
             aux = vetor[i]
         else:
-            print("O vetor não está em ordem crescente!")
-            return
-    print("O vetor está em ordem crescente!")
-    return
+            return False
+    return True
 
 def ler_vetor(vetor,tamanho):
     for i in range(tamanho):
@@ -22,5 +20,8 @@ ler_vetor(vetor, tamanho)
 
 print("="*50)
 
-verificar_ordem(tamanho,vetor)
+if verificar_ordem(tamanho,vetor):
+    print("O vetor está em ordem crescente!")
+else:
+    print("O VETOR NÃO ESTÁ EM ORDEM CRESCENTE!")
 print(vetor)
