@@ -1,27 +1,26 @@
-def criar_lista(tamanho):
-    lista = []
+def ler_vetor(tamanho,Vetor):
     for i in range(tamanho):
-        aux = int(input("Digite um número inteiro: "))
-        lista.append(aux)
-    return lista
+        Vetor[i] = int(input("Digite um número inteiro: "))
 
-def separar_par(tamanho,lista):
+def separar_par(tamanho,Vetor):
     par = []
     for i in range(tamanho):
-        if lista[i] % 2 == 0:
-            par.append(lista[i])
+        if Vetor[i] % 2 == 0:
+            par.append(Vetor[i])
     return par
-
-def separar_impar(tamanho,lista):
+    
+def separar_impar(tamanho,Vetor):
     impar = []
     for i in range(tamanho):
-        if lista[i] % 2 != 0:
-            impar.append(lista[i])
+        if Vetor[i] % 2 != 0:
+            impar.append(Vetor[i])
     return impar
 
 tamanho = int(input("Digite o tamanho do vetor: "))
 
-vetor = criar_lista(tamanho)
+vetor = [0] * tamanho
+ler_vetor(tamanho,vetor)
+
 par = separar_par(tamanho,vetor)
 impar = separar_impar(tamanho,vetor)
 
