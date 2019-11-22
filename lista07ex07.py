@@ -1,11 +1,13 @@
-def criar_ler_matriz(linha,coluna):
+def criar_matriz(linha,coluna):
     matrizaux = []
     for i in range(linha):
         matrizaux.append([0]*coluna)
+    return matrizaux
+
+def ler_matriz(matriz,linha,coluna):
     for i in range(linha):
         for j in range(coluna):
-            matrizaux[i][j] = int(input("Matriz Linha[" + str(i+1) + "], Coluna[" + str(j+1) + "]: "))
-    return matrizaux
+            matriz[i][j] = int(input("Matriz Linha[" + str(i+1) + "], Coluna[" + str(j+1) + "]: "))
 
 def quant_multiplos(linha,coluna,matriz,numero):
     contador = 0
@@ -24,7 +26,8 @@ def printar_matriz(matriz,linha,coluna):
 linhas = int(input("Digite a quantidade de linhas da matriz: "))
 colunas = int(input("Digite a quantidade de colunas da matriz: "))
 
-matriz = criar_ler_matriz(linhas,colunas)
+matriz = criar_matriz(linhas,colunas)
+ler_matriz(matriz, linhas, colunas)
 
 print("=="*50)
 
