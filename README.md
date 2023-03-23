@@ -25,7 +25,7 @@ Entre duas cadeiras na mesma fileira deve haver 0,2 m de espaço;
 Deve ser reservada ao professor um espaço de 1,5 m de comprimento;
 Calcule quantas carteiras cabem na sala de aula.
 
-#LISTA 2
+# LISTA 2
 
 1-Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
 
